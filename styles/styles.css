@@ -1,5 +1,14 @@
+/* webpage to demonstrate the various material taught in WDD 130 */
+
+:root {
+    --primary-background-color: #78b9ea;
+    --border: 1px solid #000;
+    --space-between: 1rem;
+    --image-height: auto;
+}
+
 nav {
-    background-color: #78b9ea;
+    background-color: var(--primary-background-color);
     padding: 10px;
 }
 
@@ -19,25 +28,25 @@ h1 {
 
 main img {
     width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
+    height: var(--image-height);
+    border: var(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid slategray;
-    padding: 1rem;
-    background-color: #78b9ea;
+    margin: var(--space-between);
+    border: var(--border);
+    padding: var(--space-between);
+    background-color: var(--primary-background-color);
     color: #333;
     text-align: justify;
 }
 
 aside img {
     width: 200px;
-    height: auto;
+    height: var(--image-height);
 }
 
 p {
@@ -45,7 +54,7 @@ p {
 }
 
 footer {
-    margin-top: 1rem;
-    border-top: 1px solid #000;
+    margin-top: var(--space-between);
+    border-top: var(--border);
     text-align: center;
 }
