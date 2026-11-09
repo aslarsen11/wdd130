@@ -1,14 +1,20 @@
-/* webpage to demonstrate the various material taught in WDD 130 */
+/* 9 November 2026 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root {
-    --primary-background-color: #78b9ea;
+    --primary-background-color: #b1ddff;
     --border: 1px solid #000;
     --space-between: 1rem;
     --image-height: auto;
 }
 
 nav {
-    background-color: var(--primary-background-color);
+    background-color: #73c0e0;
     padding: 10px;
 }
 
@@ -24,6 +30,7 @@ main {
 
 h1 {
     color: darkblue;
+    margin: var(--space-between);
 }
 
 main img {
@@ -31,17 +38,15 @@ main img {
     height: var(--image-height);
     border: var(--border);
     padding: 2px;
+    margin-left: var(--space-between);
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 aside {
     width: 20rem;
-    margin: var(--space-between);
-    border: var(--border);
-    padding: var(--space-between);
-    background-color: var(--primary-background-color);
-    color: #333;
     text-align: justify;
+    position: relative;
 }
 
 aside img {
@@ -49,12 +54,32 @@ aside img {
     height: var(--image-height);
 }
 
+aside h2 {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
 p {
     padding: 0;
+    margin: var(--space-between);
 }
 
 footer {
     margin-top: var(--space-between);
     border-top: var(--border);
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: var(--space-between);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: var(--space-between);
+    background-color: var(--primary-background-color);
+    color: #333;
+}
+
+.indent {
+    padding-left: 2rem;
 }
