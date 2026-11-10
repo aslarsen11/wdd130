@@ -1,0 +1,118 @@
+/* 9 November 2026 */
+
+:root {
+    --primary-color: #608C98;
+    /* gray blue */
+    --secondary-color: rgba(106, 158, 99, 0.7);
+    /* olive green */
+    --accent1-color: #3B3F52;
+    /* very dark slate blue*/
+    --accent2-color: #4c5e72;
+    /* dark slate blue */
+    --accent3-color: #F8D779;
+    /* sunshine yellow */
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+    --border: 1px solid #000;
+    --space-between: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+body img {
+    width: 120px;
+    height: auto;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+h2 {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    padding: 3px;
+    text-align: center;
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+nav a img {
+    width: 45px;
+    height: auto;
+}
+
+article {
+    position: absolute;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+section p {
+    position: relative;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Class Selectors */
+
+.socialmedia a {
+    text-decoration: none;
+    float: right;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin: 1rem;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 0px;
+}
