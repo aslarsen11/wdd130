@@ -2,13 +2,13 @@
 
 :root {
     --primary-color: #608C98;
-    /* gray blue */
+    /* gray blue green */
     --secondary-color: rgba(106, 158, 99, 0.7);
     /* olive green */
     --accent1-color: #3B3F52;
-    /* very dark slate blue*/
+    /* dark slate blue*/
     --accent2-color: #77b5cb;
-    /* dark slate blue */
+    /* blue green */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
