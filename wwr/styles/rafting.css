@@ -1,14 +1,14 @@
 /* 9 November 2026 */
 
 :root {
-    --primary-color: #72a9b8;
-    /* gray blue green */
-    --secondary-color: rgba(83, 127, 77, 0.7);
-    /* olive green */
-    --accent1-color: #3B3F52;
-    /* dark slate blue*/
-    --accent2-color: #77b5cb;
+    --primary-color: #80bccd;
     /* blue green */
+    --secondary-color: rgba(83, 127, 77, 0.7);
+    /* dark olive green */
+    --accent1-color: #1d254a;
+    /* dark navy blue */
+    --accent2-color: #94b4de;
+    /* sky blue */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
