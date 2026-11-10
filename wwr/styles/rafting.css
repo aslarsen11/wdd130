@@ -7,14 +7,10 @@
     /* olive green */
     --accent1-color: #3B3F52;
     /* very dark slate blue*/
-    --accent2-color: #4c5e72;
+    --accent2-color: #77b5cb;
     /* dark slate blue */
-    --accent3-color: #F8D779;
-    /* sunshine yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
-    --border: 1px solid #000;
-    --space-between: 1rem;
 }
 
 * {
@@ -56,7 +52,7 @@ h1 {
 }
 
 h2 {
-    background-color: var(--secondary-color);
+    background-color: var(--accent2-color);
     color: var(--accent1-color);
     padding: 3px;
     text-align: center;
