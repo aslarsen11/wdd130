@@ -1,4 +1,4 @@
-/* 9 November 2026 */
+/* 12 November 2026 */
 
 * {
     margin: 0;
@@ -7,30 +7,68 @@
 }
 
 :root {
-    --primary-background-color: #b1ddff;
+    --primary-background-color: #98CBD9;
+    /* light blue green */
+    --secondary-background-color: #027894;
+    /* medium blue green */
+    --primary-header-color: #025F75;
+    /* deep blue green */
     --border: 1px solid #000;
     --space-between: 1rem;
     --image-height: auto;
 }
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+body {
+    font-size: 16px;
+    font-family: Georgia, Arial, sans-serif;
+}
+
 nav {
-    background-color: #73c0e0;
-    padding: 10px;
+    background-color: var(--secondary-background-color);
+    padding: var(--space-between);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: white;
+}
+
+a {
+    text-decoration: none;
 }
 
 nav a {
-    color: black;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
 }
 
 main {
-    max-width: 840px;
+    margin: var(--space-between);
+    grid-column: 2/3;
+    display: block;
 }
 
 h1 {
-    color: darkblue;
     margin: var(--space-between);
+    padding-bottom: var(--space-between);
+    border-bottom: 2px solid var(--primary-header-color);
+    color: var(--primary-header-color);
 }
 
 main img {
@@ -45,8 +83,10 @@ main img {
 
 aside {
     width: 20rem;
-    text-align: justify;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: justify;
 }
 
 aside img {
@@ -77,9 +117,24 @@ footer {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: var(--space-between);
     background-color: var(--primary-background-color);
-    color: #333;
+    color: #000;
 }
 
 .indent {
     padding-left: 2rem;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+a:visited {
+    color: #460153;
+    /* dark violet */
+}
+
+a:link {
+    color: #013542;
+    /* dark teal */
 }
