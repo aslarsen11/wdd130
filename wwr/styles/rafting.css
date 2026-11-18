@@ -1,4 +1,4 @@
-/* 9 November 2026 */
+/* 17 November 2026 */
 
 :root {
     --primary-color: #98CBD9;
@@ -15,8 +15,8 @@
 
 * {
     margin: 0;
-    /* padding: 0;
-    box-sizing: border-box; */
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -44,6 +44,7 @@ header {
 
 header img {
     padding: 0 0 1rem 7rem;
+    box-sizing: unset;
 }
 
 nav a {
@@ -62,8 +63,8 @@ h2 {
 
 h1 {
     position: absolute;
-    top: 3px;
-    width: 96%;
+    top: 15px;
+    width: 100%;
     padding: 16px;
     text-align: center;
     background-color: var(--secondary-color);
@@ -71,6 +72,7 @@ h1 {
 }
 
 h2 {
+    margin-bottom: 1rem;
     background-color: var(--accent2-color);
     color: var(--accent1-color);
     padding: 3px;
