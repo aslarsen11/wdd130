@@ -1,19 +1,19 @@
 /* 9 November 2026 */
 
 :root {
-    --primary-color: #80bccd;
+    --primary-color: #98CBD9;
     /* blue green */
     --secondary-color: rgba(83, 127, 77, 0.7);
     /* dark olive green */
     --accent1-color: #1d254a;
     /* dark navy blue */
-    --accent2-color: #94b4de;
+    --accent2-color: #48bbd8;
     /* sky blue */
     --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
+    --body-font: Georgia, Arial, sans-serif;
 }
 
-* {
+z * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,6 +36,25 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: center;
+}
+
+header img {
+    padding: 0 0 1rem 7rem;
+}
+
+nav a {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Acme, Arial, sans-serif;
+    color: var(--accent1-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -43,8 +62,8 @@ h2 {
 
 h1 {
     position: absolute;
-    top: 20px;
-    width: 100%;
+    top: 3px;
+    width: 96%;
     padding: 16px;
     text-align: center;
     background-color: var(--secondary-color);
@@ -81,15 +100,54 @@ section p {
     position: relative;
 }
 
+figure {
+    margin: 0;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    display: grid;
+    border-top: 1px solid #000;
+}
+
 footer p {
     text-align: center;
+    grid-column: 1;
 }
 
 /* Class Selectors */
 
-.socialmedia a {
+.history {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.history img {
+    width: 300px;
+    height: auto;
+}
+
+.adventure {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.socialmedia {
     text-decoration: none;
-    float: right;
+    grid-column: 2;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin: 0;
 }
 
 .hero {
