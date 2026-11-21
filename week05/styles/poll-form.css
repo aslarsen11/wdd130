@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    color: #241857;
+    background: #fff;
+}
+
+header {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 650px;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 2rem;
+    color: #571e85;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #c5c5cc;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    gap: 0.5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: #571e85;
+    font-size: 1.3rem;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+textarea {
+    width: 550px;
+}
+
+button {
+    margin: 1rem;
+    background-color: #45067a;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus-visible {
+    background-color: rgb(8, 91, 101);
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #2c044c;
+    border-top: 1px solid #a1a0a0;
+}
+
+/* Class Selectors*/
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.label-wide {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+    align-items: center;
+}
+
+.label-text {
+    display: grid;
+    margin: 0.5rem 0;
+    align-content: center;
+}
+
+.label-text label {
+    display: grid;
+    justify-content: center;
+}
+
+.label-narrow {
+    grid-template-columns: 1fr 2fr;
+}
