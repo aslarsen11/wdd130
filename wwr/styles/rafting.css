@@ -108,6 +108,10 @@ figcaption {
     text-align: center;
 }
 
+iframe {
+    border: 0;
+}
+
 button {
     grid-column: 2;
     background-color: var(--accent1-color);
@@ -178,7 +182,7 @@ footer p {
 
 .grid {
     display: grid;
-    grid-template-columns: (1fr, 1fr);
+    grid-template-columns: 1fr 1fr;
     padding-bottom: 1rem;
 }
 
